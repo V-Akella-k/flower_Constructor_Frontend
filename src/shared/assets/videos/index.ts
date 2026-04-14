@@ -1,0 +1,1 @@
+export { default as yellowFlower } from './yellow_flower.mp4';

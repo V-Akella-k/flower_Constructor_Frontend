@@ -1,0 +1,117 @@
+.flower-constructor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.constructor-section {
+    height: 750px;
+    width: 100%;
+    background: rgba(15, 15, 15, 0.35);
+
+    /* liquid glass */
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.constructor-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    gap: 8px;
+}
+
+.constructor-placeholder h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.constructor-placeholder p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+.constructor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.constructor-header h2 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.close-constructor {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.close-constructor:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.constructor-content {
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    min-height: 0;
+    /* важно для скролла внутри */
+}
+
+.canvas-container {
+    flex: 3;
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.three-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.constructor-controls {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.constructor-controls h3 {
+    margin: 0 0 14px;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.control-group input[type="range"] {
+    width: 100%;
+}

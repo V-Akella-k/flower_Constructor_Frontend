@@ -1,0 +1,53 @@
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 10px;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.catalog-card:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.085);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-card__img--placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.catalog-card__title {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    opacity: 0.95;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* максимум 2 строки */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

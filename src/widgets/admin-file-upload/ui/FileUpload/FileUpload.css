@@ -1,0 +1,44 @@
+.file-upload {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Скрываем input полностью */
+.file-input-hidden {
+  display: none;
+}
+
+/* строка */
+.file-display {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Жёлтая кнопка */
+.upload-button {
+  background-color: #f7c500;
+  color: #000;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.upload-button:hover {
+  background-color: #ffd83a;
+}

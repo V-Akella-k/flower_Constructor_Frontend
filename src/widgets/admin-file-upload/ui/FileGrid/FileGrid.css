@@ -1,0 +1,9 @@
+.file-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+}

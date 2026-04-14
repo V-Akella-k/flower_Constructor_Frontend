@@ -1,0 +1,1 @@
+export { default as dblArrowDown } from './arrow_down.png';

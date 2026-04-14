@@ -1,0 +1,50 @@
+.catalog-panel {
+    height: 750px;
+    /* под высоту конструктора */
+    border-radius: 15px;
+
+    /* liquid glass */
+    background: rgba(15, 15, 15, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: center;
+}
+
+.catalog-panel__header {
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.catalog-panel__title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.catalog-grid {
+    padding: 14px;
+    overflow: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.catalog-grid::-webkit-scrollbar {
+    width: 10px;
+}
+
+.catalog-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+}
+
+.catalog-grid::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.12);
+}
