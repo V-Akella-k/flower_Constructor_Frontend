@@ -1,23 +1,12 @@
 import { observer } from "mobx-react-lite";
 import { Canvas, useThree } from "@react-three/fiber";
-import {
-    Html,
-    OrbitControls,
-    TransformControls,
-    useGLTF,
-} from "@react-three/drei";
+import { Html, OrbitControls, TransformControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import "./flower-constructor.css";
 
-import {
-    DND_MIME,
-    type DragFlowerPayload,
-} from "@/features/drag-flower-to-scene/model/types";
-import {
-    sceneStore,
-    type SceneItem,
-} from "@/features/drag-flower-to-scene/model/store";
+import { DND_MIME, type DragFlowerPayload } from "@/features/drag-flower-to-scene/model/types";
+import { sceneStore, type SceneItem } from "@/features/drag-flower-to-scene/model/store";
 
 function Ground() {
     return (

@@ -1,12 +1,36 @@
 .constructor-page {
     background: linear-gradient(135deg, #bd5728, #fae7bb);
-    padding: 0 10px;
+    min-height: 100dvh;
+    padding: 100px 20px 20px;
 }
-
 
 .constructor-layout {
     display: grid;
     grid-template-columns: minmax(640px, 3fr) minmax(320px, 1fr);
-    gap: 20px;
+    column-gap: 20px;
     align-items: start;
+}
+
+.constructor-section__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}   
+
+.constructor-section__open-popup {
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #f5d76e, #f7c950);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.constructor-section__open-popup:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
